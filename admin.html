@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/main.min.css">
+</head>
+<body>
+    <section class="admin-panel">
+        <div class="container">
+            <div id="error">
+                <h2 id="error-text"></h2>
+            </div>
+            <h1>Salom Admin</h1>
+            <form action="" id="form">
+                <input type="text" class="name" name="name" placeholder="TOVAR NOMI"><br>
+                <input type="text" class="category" name="category" placeholder="KATIGORYASI"><br>
+                <input type="number" class="price" name="price" placeholder="NARXI"><br>
+                <input type="text" class="description" name="description" placeholder="TAVSIFI"><br>
+                <div class="custom-file-upload">
+                    <label for="fileInput"><img src="/assets/icons/file (1) 1.svg" alt=""></label>
+                    <input type="file" name="image" id="fileInput"/>
+                    <span id="file-name">RASM</span>
+                </div>
+                <input type="number" class="rating" name="rating" placeholder="REYTING"><br>
+                <button id="btn">
+                    <div class="p">add</div>
+                    <div class="lds-ellipsis"><div></div><div></div><div></div><div></div></div>
+                </button>
+            </form>
+        </div>
+    </section>
+
+
+
+
+    <script src="./js/admin.js"></script>
+</body>
+</html>

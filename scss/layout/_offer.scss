@@ -1,0 +1,24 @@
+.offer{
+    margin-top: 64px;
+    margin-bottom: 35px;
+    &__wrapper{
+        display: grid;
+        align-items: center;
+        grid-template-columns: repeat(3,1fr);
+        gap: 30px;
+        .offer__div{
+            border-radius: 12px;
+            height: 152px;
+            overflow: hidden;
+            img{
+                border-radius: 12px;
+                transition: 0.3s ease-in-out;
+            }
+            &:hover{
+                img{
+                    transform: scale(1.02);
+                }
+            }
+        }
+    }
+}

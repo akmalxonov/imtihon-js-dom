@@ -1,0 +1,116 @@
+.hero {
+    &__wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 30px;
+
+        .swiper {
+            width: 82%;
+            height: 382px;
+            position: relative;
+            border-radius: 12px;
+            overflow: hidden;
+
+            &:hover {
+
+                .swiper-button-right,
+                .swiper-button-left {
+                    opacity: 1;
+                    transform: scale(1);
+                }
+            }
+
+            .swiper-button-left {
+                position: absolute;
+                z-index: 999;
+                top: 50%;
+                transform: translateY(-50%);
+                left: 20px;
+                background-color: white;
+                border-radius: 50%;
+                box-shadow: 0px 0px 15px rgba(128, 128, 128, 0.157);
+                transform: scale(.4);
+                opacity: 0;
+                transition: 0.3s ease-in-out;
+
+                .fa-solid {
+                    font-size: 20px;
+                    color: #da002b;
+                    padding: 10px 15px;
+                }
+            }
+
+            .swiper-button-right {
+                position: absolute;
+                z-index: 999;
+                transform: translateY(-50%);
+                top: 50%;
+                right: 20px;
+                background-color: white;
+                border-radius: 50%;
+                box-shadow: 0px 0px 15px rgba(128, 128, 128, 0.157);
+                transform: scale(.4);
+                opacity: 0;
+                transition: 0.3s ease-in-out;
+
+                .fa-solid {
+                    font-size: 20px;
+                    color: #da002b;
+                    padding: 10px 15px;
+                }
+            }
+
+            .swiper-pagination-bullet {
+                background-color: #da002b;
+            }
+        }
+
+        .stock {
+            width: 23%;
+            height: 382px;
+            border: 3px solid #da002b;
+            border-radius: 12px;
+            position: relative;
+            overflow: hidden;
+
+            .swiper-pagination-bullet {
+                background-color: #da002b;
+            }
+
+            &__title {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                padding: 13px 13px 8px 13px;
+
+                h5 {
+                    font-size: 18px;
+                    font-weight: 700;
+                }
+
+                .time {
+                    display: flex;
+                    align-items: center;
+
+                    p {
+                        margin-top: -5px;
+                    }
+
+                    .item {
+                        border: 1px solid #e8e8e8;
+                        border-radius: 6px;
+                        padding: 0px 2px 2px 2px;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        margin: 0 4px;
+                        width: 28px;
+                        font-size: 16px;
+                        font-weight: 400;
+                    }
+                }
+            }
+        }
+    }
+}
