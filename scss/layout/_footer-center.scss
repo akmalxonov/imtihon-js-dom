@@ -119,8 +119,13 @@
                 width: 32px;
                 height: 32px;
                 transition: 0.3s ease-in-out;
+                path{
+                    transition: 0.3s ease-in-out;
+                }
                 &:hover{
-                    fill: #da002b;
+                    path{
+                        fill: #da002b;
+                    }
                 }
             }
         }
